@@ -1,0 +1,39 @@
+@import './base.css';
+.header{
+    font-size: 12px;
+    position: sticky;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20.18113136291504px 0;
+}
+
+.header .logo{
+    display: flex;
+    flex-wrap:wrap;
+
+    align-items: center;
+}
+.nav ul{
+    display:flex;
+    gap: 17px;
+    flex-wrap:wrap;
+    
+}
+.header .nav a{
+    color:#101928;
+}
+.active{
+    font-weight: bold;
+}
+.header .auth a{
+    font-family:var(--subFont) ;
+    padding:5px 35px;
+}
+.header .auth a:first-of-type{
+    border:1px solid var(--mainColor);
+    border-radius:5px;
+}
+.header .auth a:last-of-type{
+    background-color: var(--mainColor);
+    border-radius:5px;
+    color:#ffffff;
+}
