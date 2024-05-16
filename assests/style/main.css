@@ -14,6 +14,7 @@
     --mainColor:#545BE8;
 }
 body{
+    height: 5550px;
     font-family: var(--mainFont);
     color:var(--mainColor);
 }
