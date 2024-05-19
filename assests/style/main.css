@@ -37,6 +37,15 @@ a{
 ul{
     list-style: none;
 }
+
+.footer{
+
+    background-color:#393e46;
+    color:#fff;
+}
+.footer a{
+    color: #fff;
+}
 @media (max-width:990px){
 .nav{
     display: none;
