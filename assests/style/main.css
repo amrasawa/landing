@@ -725,7 +725,16 @@ ul{
 .footer .footer-end .footer-item h2{
     font-size:20px;
 }
-@media (max-width:850px)
+@media (min-width:1060px)
+{
+    .footer .footer-start{
+        width:30%;
+    }.footer .footer-end{
+        width:56%;
+    }
+
+}
+@media (max-width:1060px)
 {
     .footer .footer-start, .footer .footer-end{
         width:100%;
