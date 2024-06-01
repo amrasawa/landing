@@ -43,6 +43,94 @@ a{
 ul{
     list-style: none;
 }
+/*register*/
+.register{
+    
+}
+
+.register .row{
+    gap:60px;
+    justify-content: flex-start;
+
+}
+
+.register-start, .register-end{
+    width:calc((100% - 60px) / 2);
+}
+.register-start{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:20px;
+}
+.register-start span{
+    font-family: var(--subFont);
+    font-weight: 300;
+}
+
+.register-start i{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.register-start h2{
+    font-size: 40px;
+    color:#141E32;
+    word-spacing: 5px;
+}
+.register-start h2 span{
+    color:var(--mainColor);
+    font-weight: 700;
+}
+
+.register-start p{
+    color:#969696;
+}
+
+.register-start .register-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.register-start .register-buttons a{
+    border:var(--mainColor) solid;
+    padding :5px 20px;
+    border-radius: 5px;;
+    background: var(--mainColor);
+    color:#fff;
+}
+.register-start .register-buttons .playVideo-button a{
+    border:transparent;
+    background-color: transparent;
+    padding:0px 2px;
+}
+.register-start .register-buttons .playVideo-button{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    
+}
+.register-start .register-buttons .playVideo-button a img{
+    border: #F0C932 solid;
+    border-radius: 50%;
+    width:10px;
+    padding: 5px;
+    background: #F0C932;
+    box-sizing: content-box;
+
+}
+.register-start .register-buttons .playVideo-button p{
+    color:#141E32;
+    font-family: var(--subFont);
+    font-weight: 700;
+}
+.register-end img{
+    width: 100%;
+}
 /*services*/
 
 .services{
@@ -125,10 +213,13 @@ ul{
     gap:20px;
     padding:0px 80px;
 }
-
 .services .buttons .button{
+    width: 40px;
+    height: 40px;
+}
+.services .buttons .button img{
     color:#fff;
-    width:40px;
+    width: 40px;
     height: 40px;
     font-size: 30px;
     padding-top:0px;
@@ -137,7 +228,11 @@ ul{
     padding:0 10px;
     background: #F0C932;
     font-weight: 300;
-    box-sizing: border-box;
+    
+}
+
+.services .buttons .button .rotate-button img{
+    rotate: 180deg;
 }
 
 /* selected-courses */
