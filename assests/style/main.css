@@ -205,11 +205,6 @@ ul{
 
 }
 
-/* @media (max-width:1000px) {
-    .services-start, .services-end{
-        width:100%;
-    }
-} */
 .services .services-start span{
     text-transform: uppercase;
     font-family: var(--subFont);
@@ -284,7 +279,26 @@ ul{
     rotate: 180deg;
 }
 
+@media (min-width:1000px) and (max-width:1124px) {
+    .services .services-end p{
+        font-size: 10px ;
+    }
+    .services .services-end h2{
+        font-size: 30px;
+    }
+}
 
+@media (max-width:1000px)  {
+    .services .services-start, .services .services-end{
+        width:100% ;
+    }
+}
+
+@media (max-width:700px) {
+    .services-end .service{
+        width:100%;
+    }
+}
 /* selected-courses */
 
 .selected-courses{ 
@@ -355,6 +369,55 @@ ul{
     color: #ddd;
     font-size: 11px;
 }
+
+@media (min-width:1115px) {
+    .selected-courses-end span ,.selected-courses-end p{
+        font-size: 20px ;
+    }
+    .selected-courses-end h2{
+        font-size: 44px;
+    }
+    .selected-courses-end{
+        gap:40px;
+    }
+}
+@media (max-width:900px){
+    .selected-courses-end span ,.selected-courses-end p.selected-courses-end  .figure:last-of-type,.selected-courses-end  .figure:first-of-type{
+
+        font-size: 10px !important;
+    }
+    .selected-courses-end h2{
+        font-size: 25px !important;
+    }
+    .selected-courses-end{
+        gap:20px;
+    }
+    .selected-courses-end {
+        padding:40px 0px;
+    }
+}
+@media (max-width:650px)
+{
+    .selected-courses-end, .selected-courses-start{
+        width:100%;
+    }
+    .selected-courses .row{
+        gap:20px;
+    }
+    .selected-courses-start img{
+        width:80%;
+    }
+    .selected-courses-end span ,.selected-courses-end p{
+        font-size: 20px ;
+    }
+    .selected-courses-end h2{
+        font-size: 44px;
+    }
+    .selected-courses-end{
+        gap:40px;
+    }
+}
+
 /* Available Courses */
 .available-courses{
     padding : 40px 0;
@@ -485,6 +548,19 @@ ul{
     margin-top: 20px;
 }
 
+@media (max-width:1024px)
+{
+    .available-courses .available-courses-start, .available-courses .available-courses-end{
+        width:100% !important;
+    }
+}
+
+@media (max-width:750px) {
+    .available-courses .available-courses-start .row .courses{
+        width:100%;
+    }
+}
+
 /*testimonial*/
 .testimonials{
     padding-bottom: 40px;
@@ -568,6 +644,13 @@ ul{
     color:#646464;
     padding-bottom:20px ;
 }
+
+@media (max-width:600px){
+    .testimonials .testimonial{
+        width:100%;
+    }
+}
+/*footer*/
 .footer{
     
     background-color:#393e46;
@@ -638,4 +721,10 @@ ul{
 }
 .footer .footer-end .footer-item h2{
     font-size:20px;
+}
+@media (max-width:850px)
+{
+    .footer .footer-start, .footer .footer-end{
+        width:100%;
+    }
 }
