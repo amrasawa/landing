@@ -136,9 +136,12 @@ ul{
     .register-start span{
         font-size:40px
     }
+    .register .register-start{
+        gap:40px;
+    }
 }
 
-@media  (max-width:900px) {
+@media  (max-width:950px) {
     .register p, .register span, .register a{
         font-size: 10px;
     }
