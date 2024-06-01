@@ -131,6 +131,49 @@ ul{
 .register-end img{
     width: 100%;
 }
+
+@media (min-width:1024px){
+    .register-start span{
+        font-size:40px
+    }
+}
+
+@media  (max-width:900px) {
+    .register p, .register span, .register a{
+        font-size: 10px;
+    }
+    .register h2, .register h2 span{
+        font-size: 20px;
+    }
+    .register-start{
+        margin-bottom: 20px;;
+    } 
+}
+
+@media (max-width:600px) {
+    .register-start,.register-end{
+        width:100%;
+    }
+    .register-start{
+        order:1;
+        text-align: center;
+    }
+    .register-buttons{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:400px){
+    .register-end img{
+        display: none;
+    }
+    .register-start{
+        padding:0px;
+    }
+    .register-start span{
+        font-size: 20px;
+    }
+}
 /*services*/
 
 .services{
@@ -140,6 +183,7 @@ ul{
 
 .services .row{
     gap:20px;
+    flex-wrap: wrap;
 }
 
 .services .services-start{
@@ -148,19 +192,24 @@ ul{
     flex-direction: column;
     justify-content: flex-start;
     gap:20px;
-    width:30%;
+    width:calc((100% - 20px) / 4);
 }
 
 .services .services-end {
     display: flex;
     flex-wrap:wrap;
     gap:30px;
-    width:65%;
+    width:calc((100% - 50px) / (4 / 3));
     padding:40px;
     padding-bottom: 10px;
 
 }
 
+/* @media (max-width:1000px) {
+    .services-start, .services-end{
+        width:100%;
+    }
+} */
 .services .services-start span{
     text-transform: uppercase;
     font-family: var(--subFont);
@@ -234,6 +283,7 @@ ul{
 .services .buttons .button .rotate-button img{
     rotate: 180deg;
 }
+
 
 /* selected-courses */
 
@@ -588,9 +638,4 @@ ul{
 }
 .footer .footer-end .footer-item h2{
     font-size:20px;
-}
-@media (max-width:990px){
-.nav{
-    display: none;
-}
 }

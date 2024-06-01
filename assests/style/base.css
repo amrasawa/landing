@@ -1,4 +1,6 @@
 @import './base.css';
+
+
 .header{
     font-size: 12px;
     position: sticky;
@@ -24,6 +26,9 @@
 .header .nav a{
     color:#101928;
 }
+.burger-menu{
+    display: none;
+}
 .active{
     font-weight: bold;
 }
@@ -39,4 +44,21 @@
     background-color: var(--mainColor);
     border-radius:5px;
     color:#ffffff;
+}
+@media (max-width:990px){
+    .nav{
+        display: none;
+    }
+    .burger-menu{
+        display: inline-block;
+        order:1;
+    }
+    .auth{
+        display: none;
+    }
+}
+@media (max-width:425px) {
+    .container{
+        width:calc((100% - 40px));
+    }
 }
